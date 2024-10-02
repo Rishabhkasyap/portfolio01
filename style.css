@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'nunito', sans-serif;
+
+}
+:root
+{
+    --bg-color: #1c1d24;
+    --snd-bg-color:#151518;
+    --text-color:#fff;
+    --main-color:#59b2f4;
+
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body
+{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section
+{
+    min-height: 1vh;
+    padding: 10rem 9% 2rem;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  cursor: default;  
+}
+.navbar a
+{
+font-size: 1.5rem;
+color: var(--text-color);
+margin-left: 4rem;
+font-weight: 700;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    color: var(--text-color);
+}
+#menu-icon
+{
+    display: none;
+}
+.menu-icon
+{
+color: #fff;
+font-size: 30px;
+}
+
+    .home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hime-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2)
+{
+    margin-bottom: 2rem;;
+}
+span{
+    color: var(--main-color);
+}
+.home-content h1
+{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-img img
+{
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-2.4rem);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+.home-content p 
+{
+    font-size: 1.6rem;
+}
+img
+{
+    border-radius: 50px;
+    box-shadow: #59b2f4;
+    cursor: pointer;
+
+}
+.social-media a
+{
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 25px;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    
+}
+.btn
+{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+     
+}
+.btn:hover
+{
+    box-shadow: none;
+}
+
+/* THIS IS ABOUT SECTION CSS*/
+
+.about
+{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    background: var(--snd-bg-color);
+
+}
+.about-img img
+{
+width:35vw ;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+object-fit: cover;
+border-radius: 50px;
+}
+.heading
+{
+    text-align: center;
+    padding: 2rem;
+    font-size: 4.5rem;
+}
+.about-content h2{
+    text-align: left;
+    padding: 2rem;
+    line-height: 1.2;
+}
+.about-content h3
+{
+    font-size: 1.6rem;
+    
+    padding: 2rem;
+}
+.about-content p
+{
+    font-size: 1.6rem;
+    padding: 2rem;
+    margin: 3rem 0 3rem;
+}
+.btn2
+{
+    display: inline-block;
+    margin-left: 2rem;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease; 
+}
+.btn2:hover
+{
+    box-shadow: none;
+}
+/* Project section */
+
+.projects
+{
+    
+   height:300px;
+    text-align: center;
+    
+    margin: 4rem;
+    color: black;
+    
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  
+   
+}
+.project1
+{
+    border: 2px solid var(--main-color);
+   border-radius: 25px;
+    
+    background-image: url(profile.jpeg);
+    background-size: cover;
+}
+.project2
+{
+    border: 2px solid var(--main-color);
+    
+    border-radius: 25px;
+    
+    background-image: url(profile.jpeg);
+    background-size: cover;
+}
+.project3
+{
+    border: 2px solid var(--main-color);
+   
+    border-radius: 25px;
+    
+    background-image: url(profile.jpeg);
+    background-size: cover;
+}
+.projects h3{
+    font-size: 20px;
+    padding-top: 50%;
+    gap: 2px;
+    color: rgb(6, 9, 9);
+}
+.projects p{
+    font-size: small;
+    gap: 15px;
+    color: beige;
+}
+#project
+{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    background: var(--snd-bg-color);
+}
+#contact
+{
+    background-color: var(--snd-bg-color);
+     
+}
+.heading_contact
+{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.talk
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+   
+}
+
+
+.styled-form {
+    
+    padding: 20px;
+    border: 3px solid var(--main-color);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(9, 4, 4, 0.1);
+    width: 300px;
+}
+
+.styled-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.styled-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.styled-form input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact_info
+{
+    font-size: 23px;
+    gap: 5px;
+}
+.footer
+{
+    background-color: #0c0707;
+    font-size: 25px;
+    text-align: center;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+    
